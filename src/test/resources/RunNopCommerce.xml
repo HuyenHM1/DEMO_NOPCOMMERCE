@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <parameter name = "browser" value = "Chrome" />
+  <test name="Test on Chrome">
+    <classes>
+      <class name="com.nopcommerce.registration.Registration_01_Register"/>
+<!--       <class name="com.nopcommerce.login.Login_01_Login"/> -->
+      <class name="com.nopcommerce.common.Common_Register"/>
+<!--       <class name="com.nopcommerce.myaccount.MyAccount_01_MyAccount"/> -->
+    </classes>
+<!--     <packages> name = "com.nopcommerce.registration"> -->
+<!--     </packages> -->
+  </test> 
+</suite> 
