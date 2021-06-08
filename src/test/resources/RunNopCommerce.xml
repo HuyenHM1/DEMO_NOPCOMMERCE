@@ -4,11 +4,11 @@
   <test name="Test on Chrome">
     <classes>
       <class name="com.nopcommerce.registration.Registration_01_Register"/>
-<!--       <class name="com.nopcommerce.login.Login_01_Login"/> -->
+      <class name="com.nopcommerce.login.Login_01_Login"/>
+      <class name="com.nopcommerce.myaccount.MyAccount_01_CustomerInfo"/>
+      <class name="com.nopcommerce.myaccount.MyAccount_02_AddAddress"/>
+      <class name="com.nopcommerce.myaccount.MyAccount_03_ChangePassword"/>
       <class name="com.nopcommerce.common.Common_Register"/>
-<!--       <class name="com.nopcommerce.myaccount.MyAccount_01_MyAccount"/> -->
     </classes>
-<!--     <packages> name = "com.nopcommerce.registration"> -->
-<!--     </packages> -->
   </test> 
 </suite> 

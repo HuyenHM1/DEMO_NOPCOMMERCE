@@ -4,10 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
 import com.nopcommerce.common.Common_Register;
+
 import commons.AbstractTests;
 import commons.PageGeneraterManager;
 import pageObjects.HomePageObject;
@@ -21,7 +22,7 @@ public class Registration_01_Register extends AbstractTests {
 
 	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass(@Optional("firefox") String browserName) {
+	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
 		homePage  = PageGeneraterManager.getHomePage(driver);
 	}

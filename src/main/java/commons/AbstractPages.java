@@ -408,7 +408,7 @@ public class AbstractPages {
 		return getTextElement(driver, CommonPageUIs.DYNAMIC_INLINE_ERROR_MESSAGE, values);
 	}
 	
-	public void openPageInLeftMenuInMyAccountPage(WebDriver driver, String itemName) {
+	public void openPageInLeftMenuInMyAccount(WebDriver driver, String itemName) {
 		waitForAElementVisible(driver, CommonPageUIs.DYNAMIC_LEFT_MENU_IN_MY_ACCOUNT_PAGE, itemName);
 		clickToElement(driver, CommonPageUIs.DYNAMIC_LEFT_MENU_IN_MY_ACCOUNT_PAGE, itemName);
 	}

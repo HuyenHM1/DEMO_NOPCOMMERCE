@@ -3,9 +3,9 @@ package com.nopcommerce.login;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -22,7 +22,7 @@ public class Login_01_Login extends AbstractTests {
 	LogInPageObject loginPage;
 
 	@Parameters("browser")
-	@BeforeTest
+	@BeforeClass
 	public void beforeTest(String browserName) {
 		driver = getBrowserDriver(browserName);
 		homePage = PageGeneraterManager.getHomePage(driver);
@@ -82,7 +82,7 @@ public class Login_01_Login extends AbstractTests {
 		verifyTrue(homePage.isMyAccountDisplayed());
 	}
 
-	@AfterTest(alwaysRun = true)
+	@AfterClass(alwaysRun = true)
 	public void afterTest() {
 		closeBrowserAndDriver(driver);
 	}
