@@ -15,7 +15,7 @@ public abstract class AbstractTests {
 	private WebDriver driver;
 
 	protected WebDriver getBrowserDriver(String browserName) {
-		BROWSER browser = BROWSER.valueOf(browserName.toUpperCase());
+		Browser browser = Browser.valueOf(browserName.toUpperCase());
 
 		switch (browser) {
 		case FIREFOX:
